@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActGestionarLibro">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:text="@string/str_gestionlibros"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#3F51B5"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_titulo"
+        />
+
+    <EditText
+        android:id="@+id/ges_txttitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/str_digitetitulo"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_subtitulo"
+        />
+
+    <EditText
+        android:id="@+id/ges_txtsubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite el Subtitulo"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_isbn"
+        />
+
+    <EditText
+        android:id="@+id/ges_txtisbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ISBN"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_autor"
+        />
+
+    <EditText
+        android:id="@+id/ges_txtautor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="AUTOR"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_anio_publicacion"
+        />
+
+    <EditText
+        android:id="@+id/ges_txtAnioPublicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite la fecha"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_precio"
+        />
+
+    <EditText
+        android:id="@+id/ges_txtprecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite el precio"
+        android:inputType="numberDecimal"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+    
+    <Button
+        android:id="@+id/ges_btnguardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/ges_btnactualizar"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick"
+        android:text="Actualizar" />
+
+    <Button
+        android:id="@+id/ges_btnborrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClick"
+        android:text="Borrar" />
+    </LinearLayout>
+
+</LinearLayout>
